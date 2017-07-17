@@ -1,0 +1,42 @@
+<h1>Beer Store View</h1>
+
+<form ng-controller="beersStoreCtrl">
+ 
+	<h2>Add Beer</h2>
+	<br/>
+ 
+	<label for="input-name">Name:</label>
+	<input type="text" id="input-name" ng-model="beersStore.beer.name"/>
+ 
+	<br/><br/>
+ 
+	<label for="input-ingredients">Ingredients:</label>
+	<input type="text" id="input-ingredients" ng-model="beersStore.beer.ingredients"/>
+ 
+	<br/><br/>
+ 
+	<label for="input-alcohol-content">Alcohol Content:</label>
+	<input type="text" id="input-alcohol-content" ng-model="beersStore.beer.alcoholContent"/>
+ 
+	<br/><br/>
+ 
+	<label for="input-price">Price (R$):</label>
+	<input type="number" id="input-price" ng-model="beersStore.beer.price"/> 
+ 
+	<br/><br/>
+ 
+	<label for="input-category">Category:</label>
+	<input type="text" id="input-category" ng-model="beersStore.beer.category"/> 
+ 
+	<br/><br/>
+ 
+ 
+	<p>
+		<!-- a href= "../">Voltar</a-->
+ 
+		<input type="button" value="Salvar" ng-click="beersStore.store(beersStore.beer)"/>
+ 
+	</p>
+ 
+ 
+</form>

@@ -1,0 +1,25 @@
+<h1>Beer Index View</h1>
+<section ng-controller="beersIndexCtrl">
+<table>
+   <ul data-ng-repeat="beer in beersIndex.beers.data">
+     <li value="Id">            
+        Id: {{beer.id}}
+     </li>
+     <li>            
+        Name: {{beer.name}}
+     </li>
+     <li>            
+        Ingredients: {{beer.ingredients}}
+     </li>
+     <li>            
+        Alcohol Content: {{beer.alcoholContent}}
+     </li> 
+     <li>            
+        Price (R$): {{beer.price}}
+     </li>
+     <li>            
+        Category: {{beer.category}}
+     </li>
+   </ul>
+</table>
+</section>
